@@ -1,0 +1,330 @@
+--------------------------------------------->    JS SERIES STARTS HERE ------------------------------------------------------------>
+
+
+.BRENDAN EICH introduced javascript -1995
+.js was called has live script in beta version
+.js is a high level language to make webpage dynamic
+.ECMA manages the rules and regulation of javascript
+.ecma script contains all synatx and datatypes 
+.ecma script just foloows the rules and regulation
+.ES5 version are the features that ecma releases 
+.ES6 contains all features 
+
+
+.javascript CAN BE RUN IN BROWSER AND NODEJS
+.different browsers have different js engines
+.chrome ----> V8 engines
+.edge ------> chakra engines
+.firefox---->spider monkey
+
+
+DATA TYPES :
+1.PRIMITIVE AND NON-PRIMITIVE datatypes
+.string      |  .arrays
+.boolean     |  .objects
+.undefined   |  .functions
+.null        |  .reference
+.symbol      |
+.int         |
+
+
+
+
+OPERATORS IN javascript
+.arrithmatic = +,-,*,/,%
+.logical = &,|,!
+.assignment = +=,-=,/=,*=
+comparison = ==,=>,=<,!=
+BITWISE = =>,&&,||
+identity = ===
+
+==without datatype === along with the datatype
+
+
+OBJECTS WRITTEN IN {}
+
+{
+name:" peter",
+age:" 20"
+}
+
+
+arrays
+["hello",2,{},true,null,[]]
+
+
+LET , VAR , const
+.var is no used now 
+let - > ES6
+
+.can also be written in html direct inside script tag
+
+FOR OF LOOP CAN BE APPLIED FOR ARRAY VS FOR IN LOOP CAN BE used FOR OBJECTS AND ARRAYS BOTH 
+For of cannot be used for objects error object are not iterable
+for in keys obj[keys]
+
+SYNCHRONOUSE executes code line by line
+ASYNCHRONOUS executes code without SYNCHRONOUSE way using promises sort of thing
+
+TERNARY OPERATORS
+condition ? " " : " "
+
+
+----------------------------------------------------------------------------------
+FUNCTIONS IN javascript
+
+//named function
+function add(a,b){
+    return a+b;
+}
+
+console.log(add(10,20));
+
+//anonymous function
+
+let sub = function (a,b){
+    return a-b;
+}
+console.log(sub(20,10));
+
+
+//iife - Immediate invoked function expression
+
+let mul = (function(a,b){
+    return a*b;
+}(10,20))
+
+console.log(mul);
+
+
+//Arrow function -->ES6 FEATURE
+
+let div = (a,b)=>{
+    return a/b;
+}
+
+console.log(div(10,2));
+
+
+----------------------------------------------------------------------------------------
+
+
+
+CALLBACK FUNCTION -> passing one function has an argument to another function is called has callback function
+function main(string){
+    console.log("hello" , string);
+}
+
+function greet(callback){
+    let str = "world";
+    callback(str)
+}
+greet(main)
+
+
+------------------------------------------------------------------------------------
+
+var - > can be initialisd also updated by others as well also u can re-diclare the same variable name 
+let ->  in let we can re-initialisd it but cannot create new variable with same name
+const -> the value added here cannot be changed and cannot be re-declared it 
+
+--------------------------------------------------------------------------------------
+
+SCOPES IN js
+VAR is a global SCOPES
+Let is a block scope ment inside a block
+const is a block scope ment inside a block
+
+hoisting happens in all let,var and const 
+var -> undefined
+let and const -> reference error
+
+
+
+-------------------------------------------------------------------------
+
+DEEP COPY AND SHALLOW COPY
+
+SHALLOW COPY -> uses ... dots and also it is not perfect COPY
+DEEP COPY -> it is fullly copy not like shallow copy
+... = > spread OPERATORS called in objects and arrays
+... -> it is called rest parameter in function parameter it is added in the last of the parameter in functions
+
+-----------------------------------------------------------------------
+DESTRUCTURING OF OBJECT 
+
+let person = {
+    fname : "rolex",
+    age : 21,
+    address : {
+        city : "mysore",
+        pincode : "34343535"
+    }
+}
+const {fname,age,address} = person
+const { city,pincode} = address
+
+console.log(fname);
+console.log(age);
+console.log(city);
+console.log(pincode);
+
+ALIEAS is a another name given to key if it has a same key name
+
+
+--------------------------------------------------------------------
+
+NAMING CONVENTION IN javascript
+
+Camel case - > firstName  , VARIABLE
+Pascal case - > firstName , COMPONENTS
+Kebab case - > first-name , FILE NAME
+Snake case - > first_name,FIRST_NAME  - > DB
+
+
+
+
+----------------------------------------------------------------------
+
+DATE : 17-SEP-2026 11:10AM
+
+
+
+STRING METHODS INBUILT METHODS
+
+1.length()
+2.concat
+3.charat -> does accept negative values
+4.at -> accepts negative value
+5.charcodeat
+6.indexof -> tells index of a character 1st index
+7.lastindexof -> last index of a number
+8.substring -> start string and last string index
+9.slice -> same as substring
+10.trim -> used to trim spaces in start and ending
+11.trimstart -> trim in start
+12.trimend -> trim in end 
+13.replace -> for one character
+14.replaceall -> replace all the character
+15concat -> used to join a 2 strings
+16.uppercase
+17.lowercase
+18.include -> returns true or false if a character is present inside or not
+19.startswith and endswiht
+20.repeat 
+
+----------------------------------------------------------------------------------------------
+
+
+
+OBJECT METHODS
+
+how to create object 
+use new keyword
+use .create METHOD
+
+
+METHODS
+1.object.keys
+2.object.values
+3.object.entries *** get o/p in arrays
+4.object.freeze 
+5.object.isfrozen
+6.object.seal->can only edit existing value no new value can be added
+7.object.isselead
+
+
+
+---------------------------------------------------------------------------------------------
+TIME : 12:15
+
+ARRAY METHODS IN javascript
+
+1.length
+2.unshift - > used to remove the  new values to the array
+3.shift - > removes single item only 1st item will be removed no values accepted
+4.push -> append new element at the end of the array
+5.pop - > no arguments ia accepted but the last element will removed
+6.slice - > used to slice a array
+7.splice - > remove or add  element from mid
+8.tostring - > converts arryas into string
+9.join - > give spaces for comma;
+10.reverse - > used to reverse the arraya
+11.foreach -> used to iterate but does not return anything
+12.map - > used to iteraate and also return new element if we compare it with foreach
+13.concat - > 
+14.includes - > check wheather number or element is present or not
+15.lastindexof - >
+16.isarray - > to check wheather the array or not
+
+17.reduce - > 
+18.reduceright - >
+
+19.flat - > used to remove nested array using flat
+
+*flattten an array without using inbuilt METHOD
+
+20.sorting - > arrangements
+
+21.tospliced - > tosplice does not chnage the original array
+
+22.filter - > filter  based on condition
+
+23.some -> can satisfy some conditon has true
+
+24.every - > should satisfy all 
+
+25.fill - > 
+
+26.copywithin - > 
+
+
+some,every,findindex,fill,sort,copywithin,tospliced,filter,find,some
+----------------------------------------------------------------------------------------------------
+18-SEP-2026
+
+1.set - > removes duplicate values
+
+2.MAP - > maps are used to store values in key and pairs
+
+
+---------------------------------------------------------------------------------------
+21-SEP-2026 10:30AM
+
+PROMISES - > doing a task later 
+stages - > pending,fullfilled,rejected
+
+. New keyword is used to create a promise ex - > new promise()
+
+METHODS IN PROMISES
+1.all
+2.all settled 
+3.race
+4.any 
+5.resolve
+6.reject 
+
+
+PROMISES CHAINING - > multiple .then to resovle
+
+
+AYSNC AND AWAIT
+.easy way to write promises 
+.promises is considered has micro task if compared with settimeout
+
+
+-------------------------------------------------------------------------------
+22-SEP-2026 10:30 AM 
+
+
+1.did dsa find the longest word inside a sentance
+2.write a js program which counts how many times a element has occured inside thee array
+
+FIGURE OUT URSELF
+
+1.TYPES OF SCOPES WITH ex
+2.LEXICAL ENVIRONMENT
+3.CLOSURE
+4.EXECUTION CONTEXT
+5.THIS keyword
+6.CALL, APPLY , BIND
